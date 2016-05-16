@@ -1,0 +1,5 @@
+4. Qual a diferença entre session e cookies?
+
+Session – As informacoes ficam gravadas no servidor. Se voce entra em um determinadop site, e sai, sua sessão termina, ou pode expirar o tempo. A session e mais segura pelo fato dos dados ficarem no servidor.
+
+Cookie – As informaçoes ficam gravadas em seu computador. Um exemplo é aquele cookie que um site cria para que você não precise digitar sua senha novamente quando for ao site outra vez.
