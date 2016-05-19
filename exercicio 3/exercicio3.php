@@ -5,15 +5,18 @@
       				array( 'nome' => "Rafael", 'idade' => 22 )
 );
 
-$fp = fopen('exercicio.csv', 'r');
+function filtroPorNome($pessoa) {
+	return $pessoa['nome'] == 'Italo';
+}
 
-foreach ($nome as $linha) {
- 	fputcsv($nome, $linha);
+print_r(array_filter($nome, 'filtroPorNome'));
 
- 	echo ' Nome: ' . $linha['nome'] . ",  ";
+$idades = array_column($nome, 'idade');
 
- 	echo ' Idade: ' . $linha['idade'] . '<br>';
+$idadeTotal = array_sum($idades);
 
- } 
- fclose($fp);
+echo $idadeTotal/count($nome);
+
+var_dump($idadeTotal);
+
 ?>
